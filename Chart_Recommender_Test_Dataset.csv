@@ -1,0 +1,20 @@
+Family Chart,Chart Type,User Question,Response,Country Selection
+Trend / Time Series,Line Chart,Show me the revenue trend over the last 12 months,Line Chart -- best for showing how a single continuous metric changes over a continuous time period.,India
+Trend / Time Series,Area Chart,Show cumulative sales growth across all quarters this year,Area Chart -- highlights cumulative/volume trend over time better than a plain line when magnitude matters visually.,Global (All Countries)
+Comparison,Bar Chart,Compare total sales across each region,Bar Chart -- best for comparing a metric across a small number of discrete categories.,USA
+Comparison,Column Chart,Compare monthly revenue for Q1 vs Q2,"Column Chart -- vertical bars work well for comparing values across a short, ordered time-based category set.",UK
+Composition,Pie Chart,What is the market share of each product category?,Pie Chart -- appropriate for showing parts of a whole when there are few categories (ideally under 6).,Global (All Countries)
+Composition,Stacked Bar Chart,Show revenue split by product category across each region,Stacked Bar Chart -- shows both the total and the category-wise composition across multiple groups at once.,India
+Composition,Donut Chart,Show the proportion of customers by subscription tier,Donut Chart -- functionally similar to a pie chart; used here for a modern dashboard look with a center KPI label.,Canada
+Relationship,Scatter Plot,Is there a relationship between marketing spend and revenue?,Scatter Plot -- best for showing the correlation/relationship between two continuous numeric variables.,USA
+Relationship,Bubble Chart,"Compare products by sales, profit, and quantity sold together",Bubble Chart -- extends a scatter plot with a third dimension (bubble size) for comparing three numeric variables at once.,Global (All Countries)
+Distribution,Histogram,Show the distribution of order values across all transactions,Histogram -- best for showing the frequency distribution of a single continuous numeric variable across ranges (bins).,Germany
+Distribution,Box Plot,Compare the spread and outliers of delivery times by region,"Box Plot -- best for comparing distribution, median, and outliers of a numeric variable across categories.",India
+Ranking,Horizontal Bar Chart,Show the top 10 best-selling products,"Horizontal Bar Chart -- ideal for ranked lists, especially when category labels (product names) are long.",USA
+Ranking,Funnel Chart,Show the customer conversion funnel from visit to purchase,Funnel Chart -- purpose-built for showing sequential drop-off across ordered stages of a process.,Global (All Countries)
+Geospatial,Map (Choropleth),Show total sales by country on a map,Choropleth Map -- best when the data naturally maps to geographic regions and the question explicitly involves location.,Global (All Countries)
+Geospatial,Map (Bubble/Point),Show number of active customers by city,"Point/Bubble Map -- best for point-based geographic data (cities, stores) rather than shaded regions.",France
+Hierarchical,Treemap,Show revenue breakdown by category and sub-category,Treemap -- best for showing hierarchical part-to-whole relationships across two or more nested levels.,India
+Ambiguous / Edge Case,N/A -- Clarification Needed,Show me the sales,"Ambiguous: no metric breakdown, no time frame, and no comparison dimension specified. Expected system behavior: ask a clarifying question rather than defaulting silently to one chart type.",Not specified
+Edge Case,N/A -- No Data,Show sales trend for a country with zero transactions,"Expected system behavior: return an empty-state message or an empty chart placeholder, not an error or a hallucinated chart.",Country with no sales data (test value)
+Edge Case,N/A -- Out of Scope,What is the capital of France?,"Not a valid data visualization request. Expected system behavior: reject gracefully with a message, not generate a fabricated chart.",N/A
