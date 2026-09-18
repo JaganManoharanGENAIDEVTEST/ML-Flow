@@ -1,0 +1,20 @@
+{
+  "suites": [
+    {
+      "name": "chart_recommender",
+      "dataset_path": "Chart_Recommender_Test_Dataset.csv",
+      "prompt_column": "User Question",
+      "expected_column": "Chart Type",
+      "mlflow_experiment": "chart_recommender_evaluation"
+    },
+    {
+      "name": "prompt_to_sql",
+      "dataset_path": "MLflow_Prompt_SQL_Test_Dataset.xlsx",
+      "sheet_name": "Prompt-SQL Test Dataset",
+      "header_row": 4,
+      "prompt_column": "Natural Language Prompt",
+      "expected_column": "Expected Snowflake SQL",
+      "mlflow_experiment": "prompt_to_sql_evaluation"
+    }
+  ]
+}
